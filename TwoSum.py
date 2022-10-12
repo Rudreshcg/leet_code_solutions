@@ -1,4 +1,4 @@
-'''
+"""
 1. Two Sum
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -18,4 +18,17 @@ Output: [1,2]
 Example 3:
 
 Input: nums = [3,3], target = 6
-Output: [0,1]'''
+Output: [0,1]"""
+
+
+def twoSum(nums, target):
+    seen = {}
+    for index, value in enumerate(nums):
+        remaining = target - value
+        if remaining in seen:
+            return [seen[remaining], index]
+        seen[value] = index
+    return []
+
+
+print(twoSum([2, 11, 15, 7], 9))
