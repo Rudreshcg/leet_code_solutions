@@ -22,3 +22,13 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 """
+
+
+def palindrome(n):
+    sn1 = str(n)
+    sn2 = sn1[::-1]
+    if sn1 == sn2:
+        return True
+    else:
+        return False
+print(palindrome(121))
