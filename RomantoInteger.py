@@ -60,5 +60,4 @@ class Solution(object):
 
 
 ob1 = Solution()
-print(ob1.romanToInt("III"))
-print(ob1.romanToInt("CDXLIII"))
+print(ob1.romanToInt("MCMXCIV"))
