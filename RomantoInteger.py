@@ -51,6 +51,4 @@ def romanToInt(s):
             num += roman[s[i]]
             i += 1
     return num
-
-
-print(romanToInt("MCMXCIV"))
+print(romanToInt("MIMIC"))
