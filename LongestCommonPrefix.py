@@ -31,4 +31,6 @@ def commonprefix(str1):
                 return short_str[:i]
 
     return short_str
-print(commonprefix(["flower","flow","floght"]))
+
+
+print(commonprefix(["flower", "flow", "flight"]))
